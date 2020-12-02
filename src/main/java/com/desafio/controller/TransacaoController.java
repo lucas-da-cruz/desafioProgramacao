@@ -5,10 +5,7 @@ import com.desafio.model.exception.TransacaoException;
 import com.desafio.service.TransacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -28,6 +25,12 @@ public class TransacaoController {
         catch(TransacaoException e){
             return ResponseEntity.status(422).build();
         }
+    }
+
+    @DeleteMapping
+    public ResponseEntity deleteAll(){
+        transacaoService.deleteAll();
+        return ResponseEntity.ok().build();
     }
 
 }

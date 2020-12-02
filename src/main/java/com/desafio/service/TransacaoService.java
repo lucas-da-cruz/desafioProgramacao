@@ -32,4 +32,8 @@ public class TransacaoService {
         }
             return false;
     }
+
+    public void deleteAll() {
+        transacaoRepository.deleteAll();
+    }
 }

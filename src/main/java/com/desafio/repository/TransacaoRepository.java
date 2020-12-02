@@ -15,7 +15,7 @@ public class TransacaoRepository {
         transacaoList.add(transacao);
     }
 
-    public void delete(){
+    public void deleteAll(){
         transacaoList.clear();
     }
 }

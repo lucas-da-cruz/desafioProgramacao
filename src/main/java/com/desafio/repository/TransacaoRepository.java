@@ -1,5 +1,6 @@
 package com.desafio.repository;
 
+import com.desafio.model.dto.EstatisticaDto;
 import com.desafio.model.entity.Transacao;
 import org.springframework.stereotype.Repository;
 
@@ -11,6 +12,10 @@ public class TransacaoRepository {
 
     List<Transacao> transacaoList = new ArrayList<>();
 
+    public List<Transacao> getAllTransacao() {
+        return transacaoList;
+    }
+
     public void save(Transacao transacao){
         transacaoList.add(transacao);
     }
@@ -18,4 +23,5 @@ public class TransacaoRepository {
     public void deleteAll(){
         transacaoList.clear();
     }
+
 }

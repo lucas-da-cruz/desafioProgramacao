@@ -24,21 +24,28 @@ public class EstatisticaService {
             return new EstatisticaDto();
         }
 
-        List<Double> listAllValor = transacaoLastMin
-                                        .stream()
-                                        .mapToDouble(t -> t.getValor())
-                                        .boxed()
-                                        .collect(Collectors.toList());
+        List<Double> listAllValor = getValoresDouble(transacaoLastMin);
 
-        DoubleSummaryStatistics statistics = new DoubleSummaryStatistics();
+        DoubleSummaryStatistics estatistica = getEstatistica(listAllValor);
 
-        Iterator<Double> iterator = listAllValor.listIterator();
+        return new EstatisticaDto(estatistica.getCount(), estatistica.getSum(), estatistica.getAverage(), estatistica.getMin(), estatistica.getMax());
+    }
 
+    private List<Double> getValoresDouble(List<Transacao> transacaoList){
+        return transacaoList
+                .stream()
+                .mapToDouble(t -> t.getValor())
+                .boxed()
+                .collect(Collectors.toList());
+    }
+
+    private DoubleSummaryStatistics getEstatistica(List<Double> doubleList){
+        DoubleSummaryStatistics estatistica = new DoubleSummaryStatistics();
+        Iterator<Double> iterator = doubleList.listIterator();
         while (iterator.hasNext()) {
-            statistics.accept(iterator.next());
+            estatistica.accept(iterator.next());
         }
-
-        return new EstatisticaDto(statistics.getCount(), statistics.getSum(), statistics.getAverage(), statistics.getMin(), statistics.getMax());
+        return estatistica;
     }
 
 }

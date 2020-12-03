@@ -25,5 +25,4 @@ public class EstatisticaController {
         return ResponseEntity.ok(estatisticaDto);
     }
 
-
 }

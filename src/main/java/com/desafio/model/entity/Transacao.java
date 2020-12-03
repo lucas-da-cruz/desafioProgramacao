@@ -10,7 +10,7 @@ public class Transacao {
     public Transacao() {
     }
 
-    public Transacao(float valor, OffsetDateTime dataHora) {
+    public Transacao(double valor, OffsetDateTime dataHora) {
         this.valor = valor;
         this.dataHora = dataHora;
     }

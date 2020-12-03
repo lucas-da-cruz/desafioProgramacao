@@ -30,7 +30,7 @@ public class TransacaoService {
     }
 
     public void saveTransacao(Transacao transacao){
-        if(transacao.getDataHora().isAfter(OffsetDateTime.now(ZoneOffset.of("-03:00")))){
+        if(isFutureDate(transacao.getDataHora())){
             throw new TransacaoException("A transação NÃO DEVE acontecer no futuro");
         }
         if(transacao.getValor() < 0){
@@ -39,9 +39,7 @@ public class TransacaoService {
         repository.save(transacao);
     }
 
-    private boolean isAfter(OffsetDateTime dataHora){
-        ZoneOffset zoneOffSet = ZoneOffset.of("-03:00");
-        OffsetDateTime offsetDateTime = OffsetDateTime.now(zoneOffSet);
+    private boolean isFutureDate(OffsetDateTime dataHora){
         if(dataHora.isAfter(OffsetDateTime.now(ZoneOffset.of("-03:00")))){
             return true;
         }

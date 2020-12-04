@@ -18,7 +18,7 @@ public class EstatisticaService {
     TransacaoService transacaoService;
 
     public EstatisticaDto getEstatistica(OffsetDateTime now) {
-        List<Transacao> transacaoLastMin = transacaoService.getTransacaoLastMin(now);
+        List<Transacao> transacaoLastMin = transacaoService.getTransacaoLastSeconds(now);
 
         if(transacaoLastMin.isEmpty()) {
             return new EstatisticaDto();

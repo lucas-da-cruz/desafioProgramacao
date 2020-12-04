@@ -3,9 +3,7 @@ package com.desafio.service;
 import com.desafio.model.entity.Transacao;
 import com.desafio.model.exception.TransacaoException;
 import com.desafio.repository.TransacaoRepository;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
@@ -25,8 +23,6 @@ public class TransacaoServiceTest {
     TransacaoService transacaoService;
     @Mock
     TransacaoRepository transacaoRepository;
-    @Rule
-    public ExpectedException expectedEx = ExpectedException.none();
 
     @Test
     public void testHappyWayTransacao(){

@@ -1,0 +1,166 @@
+2020-12-03 20:54:52,189 INFO org.springframework.boot.StartupInfoLogger [main] Starting MainApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 17536 (D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao)
+2020-12-03 20:54:52,195 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-03 20:54:52,215 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-12-03 20:55:02,708 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-12-03 20:55:02,746 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-03 20:55:02,748 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-12-03 20:55:02,750 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-03 20:55:03,081 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-12-03 20:55:03,082 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 10570 ms
+2020-12-03 20:55:04,486 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-03 20:55:04,805 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-03 20:55:05,334 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-03 20:55:05,395 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-03 20:55:05,400 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-12-03 20:55:05,489 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-12-03 20:55:05,585 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-12-03 20:55:06,154 INFO org.springframework.boot.StartupInfoLogger [main] Started MainApplication in 16.725 seconds (JVM running for 18.696)
+2020-12-03 20:55:06,169 INFO com.desafio.MainApplication [main] API inicializada
+2020-12-03 20:56:06,147 INFO org.springframework.boot.StartupInfoLogger [main] Starting MainApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 15764 (D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao)
+2020-12-03 20:56:06,159 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-03 20:56:06,159 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-12-03 20:56:15,517 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-12-03 20:56:15,560 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-03 20:56:15,562 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-12-03 20:56:15,562 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-03 20:56:16,228 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-12-03 20:56:16,231 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 9655 ms
+2020-12-03 20:56:17,846 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-03 20:56:18,230 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-03 20:56:18,732 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-03 20:56:18,796 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-03 20:56:18,798 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-12-03 20:56:18,877 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-12-03 20:56:19,001 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-12-03 20:56:19,517 INFO org.springframework.boot.StartupInfoLogger [main] Started MainApplication in 15.534 seconds (JVM running for 17.968)
+2020-12-03 20:56:19,524 INFO com.desafio.MainApplication [main] API inicializada
+2020-12-03 20:56:19,525 ERROR com.desafio.MainApplication [main] API inicializada
+2020-12-03 20:56:19,526 WARN com.desafio.MainApplication [main] API inicializada
+2020-12-03 20:58:17,733 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-12-03 20:58:17,753 INFO org.springframework.boot.StartupInfoLogger [main] Starting MainApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 6828 (D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao)
+2020-12-03 20:58:17,765 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-03 20:58:28,098 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-12-03 20:58:28,145 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-03 20:58:28,147 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-12-03 20:58:28,149 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-03 20:58:28,616 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-12-03 20:58:28,618 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 10398 ms
+2020-12-03 20:58:30,694 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-03 20:58:30,969 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-03 20:58:31,462 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-03 20:58:31,603 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-03 20:58:31,605 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-12-03 20:58:31,685 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-12-03 20:58:31,774 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-12-03 20:58:32,228 INFO org.springframework.boot.StartupInfoLogger [main] Started MainApplication in 17.559 seconds (JVM running for 19.435)
+2020-12-03 20:58:32,237 INFO com.desafio.MainApplication [main] API inicializada
+2020-12-03 20:58:32,238 ERROR com.desafio.MainApplication [main] API inicializada
+2020-12-03 20:58:32,238 WARN com.desafio.MainApplication [main] API inicializada
+2020-12-03 20:58:57,373 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-03 20:58:57,375 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-12-03 20:58:57,381 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 5 ms
+2020-12-03 20:58:58,575 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-1] Iniciando a API
+2020-12-03 20:59:49,669 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-12-03 20:59:49,694 INFO org.springframework.boot.StartupInfoLogger [main] Starting MainApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 14848 (D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao)
+2020-12-03 20:59:49,708 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-03 20:59:58,918 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-12-03 20:59:58,956 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-03 20:59:58,959 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-12-03 20:59:58,960 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-03 20:59:59,364 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-12-03 20:59:59,367 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 9404 ms
+2020-12-03 21:00:01,528 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-03 21:00:01,945 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-03 21:00:02,914 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-03 21:00:03,025 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-03 21:00:03,040 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-12-03 21:00:03,220 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-12-03 21:00:03,576 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-12-03 21:00:04,286 INFO org.springframework.boot.StartupInfoLogger [main] Started MainApplication in 16.64 seconds (JVM running for 18.978)
+2020-12-03 21:00:04,299 INFO com.desafio.MainApplication [main] API inicializada
+2020-12-03 21:00:04,301 ERROR com.desafio.MainApplication [main] API inicializada
+2020-12-03 21:00:04,302 WARN com.desafio.MainApplication [main] API inicializada
+2020-12-03 21:00:13,875 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-03 21:00:13,876 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-12-03 21:00:13,887 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 10 ms
+2020-12-03 21:00:14,609 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-1] 
+2020-12-03 21:13:59,469 INFO org.springframework.boot.StartupInfoLogger [main] Starting MainApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 6892 (D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao)
+2020-12-03 21:13:59,473 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-03 21:13:59,495 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-12-03 21:14:08,715 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-12-03 21:14:08,747 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-03 21:14:08,749 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-12-03 21:14:08,750 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-03 21:14:09,148 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-12-03 21:14:09,150 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 9385 ms
+2020-12-03 21:14:12,223 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-03 21:14:12,887 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-03 21:14:13,622 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-03 21:14:13,726 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-03 21:14:13,749 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-12-03 21:14:13,891 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-12-03 21:14:14,063 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-12-03 21:14:14,443 INFO org.springframework.boot.StartupInfoLogger [main] Started MainApplication in 17.632 seconds (JVM running for 19.703)
+2020-12-03 21:14:14,451 INFO com.desafio.MainApplication [main] API inicializada
+2020-12-03 21:14:14,452 ERROR com.desafio.MainApplication [main] API inicializada
+2020-12-03 21:14:14,452 WARN com.desafio.MainApplication [main] API inicializada
+2020-12-03 21:15:01,267 INFO org.springframework.boot.StartupInfoLogger [main] Starting MainApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 17168 (D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao)
+2020-12-03 21:15:01,280 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-03 21:15:01,342 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-12-03 21:15:08,554 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-12-03 21:15:08,587 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-03 21:15:08,588 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-12-03 21:15:08,590 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-03 21:15:08,904 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-12-03 21:15:08,905 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7319 ms
+2020-12-03 21:15:10,257 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-03 21:15:10,906 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-03 21:15:11,563 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-03 21:15:11,618 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-03 21:15:11,622 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-12-03 21:15:11,693 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-12-03 21:15:11,804 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-12-03 21:15:12,244 INFO org.springframework.boot.StartupInfoLogger [main] Started MainApplication in 12.59 seconds (JVM running for 13.957)
+2020-12-03 21:15:12,252 INFO com.desafio.MainApplication [main] API Inicializada - 2020-12-03T21:15:12.252212500-03:00
+2020-12-03 21:16:17,393 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-03 21:16:17,403 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-12-03 21:16:17,474 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 70 ms
+2020-12-03 21:16:18,521 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-1] Transação recebida - 2020-12-03T21:16:18.521739500-03:00
+2020-12-03 21:16:18,522 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-1] Nova transação gravada - 2020-12-03T21:16:18.522731100-03:00
+2020-12-03 21:16:26,767 INFO com.desafio.controller.EstatisticaController [http-nio-8080-exec-3] Cálculo de estatistica recebida - 2020-12-03T21:16:26.767922500-03:00
+2020-12-03 21:16:26,777 INFO com.desafio.controller.EstatisticaController [http-nio-8080-exec-3] O cálculo de estatistica demorou - 10 milisegundos
+2020-12-03 21:17:34,804 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-6] Transação recebida - 2020-12-03T21:17:34.803418200-03:00
+2020-12-03 21:17:34,833 INFO com.desafio.service.TransacaoService [http-nio-8080-exec-6] Tentativa de inserção de transação com valor negativp - 2020-12-03T21:17:34.832327900-03:00
+2020-12-03 21:17:34,840 ERROR com.desafio.controller.TransacaoController [http-nio-8080-exec-6] Erro gerado: A transação DEVE ter valor igual ou maior que 0 (zero) - 2020-12-03T21:17:34.839310100-03:00
+2020-12-03 21:18:45,716 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-9] Transação recebida - 2020-12-03T21:18:45.715823-03:00
+2020-12-03 21:18:45,719 INFO com.desafio.service.TransacaoService [http-nio-8080-exec-9] Tentativa de inserção de transação com data futura - 2020-12-03T21:18:45.719810500-03:00
+2020-12-03 21:18:45,720 ERROR com.desafio.controller.TransacaoController [http-nio-8080-exec-9] Erro gerado: A transação NÃO DEVE acontecer no futuro - 2020-12-03T21:18:45.720817900-03:00
+2020-12-03 21:19:06,957 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.6.Final
+2020-12-03 21:19:06,975 INFO org.springframework.boot.StartupInfoLogger [main] Starting MainApplication using Java 11.0.5 on DESKTOP-8V953QE with PID 22340 (D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao\target\classes started by Lucas da Cruz in D:\Projetos_desenvolvimento\itau_unibanco\desafioProgramacao)
+2020-12-03 21:19:06,978 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-12-03 21:19:14,018 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2020-12-03 21:19:14,043 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2020-12-03 21:19:14,045 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2020-12-03 21:19:14,046 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-12-03 21:19:14,360 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2020-12-03 21:19:14,361 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 7101 ms
+2020-12-03 21:19:15,556 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-12-03 21:19:15,780 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-03 21:19:16,446 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2020-12-03 21:19:16,499 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2020-12-03 21:19:16,502 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-12-03 21:19:16,565 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-12-03 21:19:16,628 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-12-03 21:19:17,212 INFO org.springframework.boot.StartupInfoLogger [main] Started MainApplication in 11.992 seconds (JVM running for 14.083)
+2020-12-03 21:19:17,219 INFO com.desafio.MainApplication [main] API Inicializada - 2020-12-03T21:19:17.219778500-03:00
+2020-12-03 21:20:13,816 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-03 21:20:13,818 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2020-12-03 21:20:13,829 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 8 ms
+2020-12-03 21:20:14,483 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-2] Transação recebida - 2020-12-03T21:20:14.483062800-03:00
+2020-12-03 21:20:14,484 ERROR com.desafio.service.TransacaoService [http-nio-8080-exec-2] Tentativa de inserção de transação com data futura - 2020-12-03T21:20:14.484058700-03:00
+2020-12-03 21:20:14,491 ERROR com.desafio.controller.TransacaoController [http-nio-8080-exec-2] Erro gerado: A transação NÃO DEVE acontecer no futuro - 2020-12-03T21:20:14.491043600-03:00
+2020-12-03 21:20:28,245 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-3] Transação recebida - 2020-12-03T21:20:28.245348-03:00
+2020-12-03 21:20:28,246 ERROR com.desafio.service.TransacaoService [http-nio-8080-exec-3] Tentativa de inserção de transação com data futura - 2020-12-03T21:20:28.246347900-03:00
+2020-12-03 21:20:28,248 ERROR com.desafio.controller.TransacaoController [http-nio-8080-exec-3] Erro gerado: A transação NÃO DEVE acontecer no futuro - 2020-12-03T21:20:28.248341300-03:00
+2020-12-03 21:20:40,195 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-4] Transação recebida - 2020-12-03T21:20:40.194085600-03:00
+2020-12-03 21:20:40,196 INFO com.desafio.controller.TransacaoController [http-nio-8080-exec-4] Nova transação gravada - 2020-12-03T21:20:40.196080700-03:00

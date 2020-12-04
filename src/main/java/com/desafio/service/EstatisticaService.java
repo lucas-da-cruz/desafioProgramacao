@@ -1,7 +1,7 @@
 package com.desafio.service;
 
 import com.desafio.model.dto.EstatisticaDto;
-import com.desafio.model.entity.Transacao;
+import com.desafio.model.dto.TransacaoDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,7 @@ public class EstatisticaService {
     TransacaoService transacaoService;
 
     public EstatisticaDto getEstatistica(OffsetDateTime now) {
-        List<Transacao> transacaoLastMin = transacaoService.getTransacaoLastSeconds(now);
+        List<TransacaoDto> transacaoLastMin = transacaoService.getTransacaoLastSeconds(now);
 
         if(transacaoLastMin.isEmpty()) {
             return new EstatisticaDto();
@@ -31,7 +31,7 @@ public class EstatisticaService {
         return new EstatisticaDto(estatistica.getCount(), estatistica.getSum(), estatistica.getAverage(), estatistica.getMin(), estatistica.getMax());
     }
 
-    private List<Double> getValoresDouble(List<Transacao> transacaoList){
+    private List<Double> getValoresDouble(List<TransacaoDto> transacaoList){
         return transacaoList
                 .stream()
                 .mapToDouble(t -> t.getValor())

@@ -1,6 +1,6 @@
 package com.desafio.service;
 
-import com.desafio.model.entity.Transacao;
+import com.desafio.model.dto.TransacaoDto;
 import com.desafio.model.exception.TransacaoComDataFuturaException;
 import com.desafio.model.exception.TransacaoComValorNegativoException;
 import com.desafio.repository.TransacaoRepository;
@@ -26,10 +26,10 @@ public class TransacaoService {
     @Autowired
     TransacaoRepository repository;
 
-    public List<Transacao> getTransacaoLastSeconds(OffsetDateTime now){
-        List<Transacao> transacaoList = repository.getAllTransacao();
+    public List<TransacaoDto> getTransacaoLastSeconds(OffsetDateTime now){
+        List<TransacaoDto> transacaoList = repository.getAllTransacao();
 
-        List<Transacao> transacaoLastMin = transacaoList
+        List<TransacaoDto> transacaoLastMin = transacaoList
                 .stream()
                 .filter(t -> t.getDataHora().isAfter(now.minusSeconds(segundos)))
                 .collect(Collectors.toList());
@@ -37,7 +37,7 @@ public class TransacaoService {
         return transacaoLastMin;
     }
 
-    public void saveTransacao(Transacao transacao){
+    public void saveTransacao(TransacaoDto transacao){
         if(isFutureDate(transacao.getDataHora())){
             Logger.warn("Tentativa de inserção de transação com data futura");
             throw new TransacaoComDataFuturaException("A transação NÃO DEVE acontecer no futuro");

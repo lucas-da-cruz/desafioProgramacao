@@ -1,6 +1,6 @@
 package com.desafio.service;
 
-import com.desafio.model.entity.Transacao;
+import com.desafio.model.dto.TransacaoDto;
 import com.desafio.model.exception.TransacaoComDataFuturaException;
 import com.desafio.model.exception.TransacaoComValorNegativoException;
 import com.desafio.repository.TransacaoRepository;
@@ -32,7 +32,7 @@ public class TransacaoServiceTest {
     @Test
     public void testHappyWayTransacao(){
         //Etapa de Mockagem
-        Transacao transacaoMock = new Transacao(25.0, OffsetDateTime.now(ZoneOffset.of("-03:00")));
+        TransacaoDto transacaoMock = new TransacaoDto(25.0, OffsetDateTime.now(ZoneOffset.of("-03:00")));
         doNothing().when(transacaoRepository).save(transacaoMock);
         //Etapa de Ação
         transacaoService.saveTransacao(transacaoMock);
@@ -49,7 +49,7 @@ public class TransacaoServiceTest {
     @Test
     public void testHappyWayTransacaoWithValorIgualA0(){
         //Etapa de Mockagem
-        Transacao transacaoMock = new Transacao(0.0, OffsetDateTime.now(ZoneOffset.of("-03:00")));
+        TransacaoDto transacaoMock = new TransacaoDto(0.0, OffsetDateTime.now(ZoneOffset.of("-03:00")));
         doNothing().when(transacaoRepository).save(transacaoMock);
         //Etapa de Ação
         transacaoService.saveTransacao(transacaoMock);
@@ -66,7 +66,7 @@ public class TransacaoServiceTest {
     @Test(expected = TransacaoComValorNegativoException.class)
     public void testBadWayTransacaoWithValorNegativo(){
         //Etapa de Mockagem
-        Transacao transacaoMock = new Transacao(-1.0, OffsetDateTime.now(ZoneOffset.of("-03:00")));
+        TransacaoDto transacaoMock = new TransacaoDto(-1.0, OffsetDateTime.now(ZoneOffset.of("-03:00")));
         //Etapa de Ação
         transacaoService.saveTransacao(transacaoMock);
     }
@@ -81,7 +81,7 @@ public class TransacaoServiceTest {
     public void testBadWayTransacaoWithPlusOneSecond(){
         //Etapa de Mockagem
         OffsetDateTime dateFuture = OffsetDateTime.now(ZoneOffset.of("-03:00")).plusSeconds(1);
-        Transacao transacaoMock = new Transacao(25.0, dateFuture);
+        TransacaoDto transacaoMock = new TransacaoDto(25.0, dateFuture);
         //Etapa de Ação
         transacaoService.saveTransacao(transacaoMock);
     }
@@ -96,7 +96,7 @@ public class TransacaoServiceTest {
     public void testBadWayTransacaoWithPlusOneMinute(){
         //Etapa de Mockagem
         OffsetDateTime dateFuture = OffsetDateTime.now(ZoneOffset.of("-03:00")).plusMinutes(1);
-        Transacao transacaoMock = new Transacao(25.0, dateFuture);
+        TransacaoDto transacaoMock = new TransacaoDto(25.0, dateFuture);
         //Etapa de Ação
         transacaoService.saveTransacao(transacaoMock);
     }
@@ -111,7 +111,7 @@ public class TransacaoServiceTest {
     public void testBadWayTransacaoWithPlusOneHour(){
         //Etapa de Mockagem
         OffsetDateTime dateFuture = OffsetDateTime.now(ZoneOffset.of("-03:00")).plusHours(1);
-        Transacao transacaoMock = new Transacao(25.0, dateFuture);
+        TransacaoDto transacaoMock = new TransacaoDto(25.0, dateFuture);
         //Etapa de Ação
         transacaoService.saveTransacao(transacaoMock);
     }

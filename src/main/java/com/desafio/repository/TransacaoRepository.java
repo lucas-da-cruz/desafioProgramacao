@@ -1,6 +1,6 @@
 package com.desafio.repository;
 
-import com.desafio.model.entity.Transacao;
+import com.desafio.model.dto.TransacaoDto;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -9,13 +9,13 @@ import java.util.List;
 @Repository
 public class TransacaoRepository {
 
-    List<Transacao> transacaoList = new ArrayList<>();
+    List<TransacaoDto> transacaoList = new ArrayList<>();
 
-    public List<Transacao> getAllTransacao() {
+    public List<TransacaoDto> getAllTransacao() {
         return transacaoList;
     }
 
-    public void save(Transacao transacao){
+    public void save(TransacaoDto transacao){
         transacaoList.add(transacao);
     }
 

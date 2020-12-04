@@ -15,11 +15,13 @@ public class RestExceptionHandler {
 
     private static org.slf4j.Logger Logger = LoggerFactory.getLogger(RestExceptionHandler.class);
 
+    @ResponseStatus(code = HttpStatus.UNPROCESSABLE_ENTITY)
     @ExceptionHandler(TransacaoComDataFuturaException.class)
     public void handleResourceComDataFutura(TransacaoComDataFuturaException exception){
         Logger.warn("Exceção gerada: " + exception.getMessage());
     }
 
+    @ResponseStatus(code = HttpStatus.UNPROCESSABLE_ENTITY)
     @ExceptionHandler(TransacaoComValorNegativoException.class)
     public void handleResourceComValorNegativoException(TransacaoComValorNegativoException exception){
         Logger.warn("Exceção gerada: " + exception.getMessage());

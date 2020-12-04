@@ -1,6 +1,6 @@
 package com.desafio.controller;
 
-import com.desafio.model.entity.Transacao;
+import com.desafio.model.dto.TransacaoDto;
 import com.desafio.service.TransacaoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,7 +20,7 @@ public class TransacaoController {
     TransacaoService transacaoService;
 
     @PostMapping
-    public ResponseEntity save(@RequestBody @Valid Transacao transacao){
+    public ResponseEntity save(@RequestBody @Valid TransacaoDto transacao){
         Logger.info("Transação recebida");
         transacaoService.saveTransacao(transacao);
         Logger.info("Nova transação gravada");

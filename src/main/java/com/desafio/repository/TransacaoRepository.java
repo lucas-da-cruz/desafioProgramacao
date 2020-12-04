@@ -1,6 +1,5 @@
 package com.desafio.repository;
 
-import com.desafio.model.dto.EstatisticaDto;
 import com.desafio.model.entity.Transacao;
 import org.springframework.stereotype.Repository;
 

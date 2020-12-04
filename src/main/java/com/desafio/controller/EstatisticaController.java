@@ -29,7 +29,7 @@ public class EstatisticaController {
         OffsetDateTime now = OffsetDateTime.now(ZoneOffset.of("-03:00"));
         EstatisticaDto estatisticaDto = estatisticaService.getEstatistica(now);
         long fim = System.currentTimeMillis() - inicio;
-        Logger.info("O cálculo de estatistica levou: " + fim + " milisegundos para ser calculada");
+        Logger.info("O cálculo de estatistica foi feito e levou: " + fim + " milisegundos para ser calculado");
         return ResponseEntity.ok(estatisticaDto);
     }
 

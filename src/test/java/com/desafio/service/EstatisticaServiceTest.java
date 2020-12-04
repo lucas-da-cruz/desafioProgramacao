@@ -103,4 +103,37 @@ public class EstatisticaServiceTest {
         Assert.assertEquals(0, estatisticaDto.getMax(), 0.000001);
     }
 
+    /**
+     * Objetivo do teste: simular quanto milisegundos levará para o cálculo,
+     * validando se o tempo levado é menor ou igual a margem estimada de tempo.
+     *
+     * Resultado esperado: que o tempo levado seja menor ou igual a 25 milisegundos.
+     */
+    @Test
+    public void testEstatisticaPerformance(){
+        //Etapa de Mockagem
+        OffsetDateTime now = OffsetDateTime.now(ZoneOffset.of("-03:00"));
+        List<Transacao> transacaoListLastMinute = new ArrayList<>(Arrays.asList(
+                new Transacao(40.7, now.minusSeconds(10)),
+                new Transacao(45.97, now.minusSeconds(20)),
+                new Transacao(35.6, now.minusSeconds(30)),
+                new Transacao(35.56, now.minusSeconds(45)),
+                new Transacao(15.0, now.minusSeconds(50)),
+                new Transacao(30.7, now.minusSeconds(59)),
+                new Transacao(45.23, now.minusSeconds(20)),
+                new Transacao(35.45, now.minusSeconds(30)),
+                new Transacao(35.23, now.minusSeconds(45)),
+                new Transacao(15.79, now.minusSeconds(50)),
+                new Transacao(30.23, now.minusSeconds(59))
+        ));
+        when(transacaoService.getTransacaoLastSeconds(now)).thenReturn(transacaoListLastMinute);
+        //Etapa de Ação
+        long inicio = System.currentTimeMillis();
+        EstatisticaDto estatisticaDto = estatisticaService.getEstatistica(now);
+        long fim = System.currentTimeMillis() - inicio;
+        //Etapa de Assertividade
+        //Limite de milisegundos que é aceitável para o cálculo (25 Milisegundos)
+        Assert.assertTrue(fim < 25);
+    }
+
 }

@@ -24,6 +24,12 @@ public class TransacaoServiceTest {
     @Mock
     TransacaoRepository transacaoRepository;
 
+    /**
+     * Objetivo do teste: simular o caminho feliz da inserção de uma transação,
+     * validando que o método de salvar foi invocado uma vez.
+     *
+     * Resultado esperado: que passe na validação e chame o método salvar com o argumento esperado.
+     */
     @Test
     public void testHappyWayTransacao(){
         //Etapa de Mockagem
@@ -35,6 +41,12 @@ public class TransacaoServiceTest {
         verify(transacaoRepository, times(1)).save(transacaoMock);
     }
 
+    /**
+     * Objetivo do teste: simular o caminho feliz da inserção de uma transação cujo valor é igual a 0,
+     * validando que o método de salvar foi invocado uma vez.
+     *
+     * Resultado esperado: que passe na validação e chame o método salvar com o argumento esperado.
+     */
     @Test
     public void testHappyWayTransacaoWithValorIgualA0(){
         //Etapa de Mockagem
@@ -46,6 +58,28 @@ public class TransacaoServiceTest {
         verify(transacaoRepository, times(1)).save(transacaoMock);
     }
 
+    /**
+     * Objetivo do teste: simular a tratativa quando receber uma transação com o atributo valor negativo,
+     * validando que o método acione uma exceção.
+     *
+     * Resultado esperado: que o método saveTransacao da classe TransacaoService invoque a exception do tipo TransacaoException.
+     */
+    @Test
+    public void testBadWayTransacaoWithValorNegativo(){
+        //Etapa de Mockagem
+        Transacao transacaoMock = new Transacao(-1.0, OffsetDateTime.now(ZoneOffset.of("-03:00")));
+        //Etapa de Ação e assertividade
+        Exception exception = assertThrows(TransacaoException.class, () -> transacaoService.saveTransacao(transacaoMock));
+        assertEquals("A transação DEVE ter valor igual ou maior que 0 (zero)", exception.getMessage());
+        verify(transacaoRepository, never()).save(transacaoMock);
+    }
+
+    /**
+     * Objetivo do teste: simular a tratativa quando receber uma transação com o atributo dataHora com um segundo futuro,
+     * validando que o método acione uma exceção.
+     *
+     * Resultado esperado: que o método saveTransacao da classe TransacaoService invoque a exception do tipo TransacaoException.
+     */
     @Test(expected = TransacaoException.class)
     public void testBadWayTransacaoWithPlusOneSecond(){
         //Etapa de Mockagem
@@ -55,6 +89,12 @@ public class TransacaoServiceTest {
         transacaoService.saveTransacao(transacaoMock);
     }
 
+    /**
+     * Objetivo do teste: simular a tratativa quando receber uma transação com o atributo dataHora com um minuto futuro,
+     * validando que o método acione uma exceção.
+     *
+     * Resultado esperado: que o método saveTransacao da classe TransacaoService invoque a exception do tipo TransacaoException.
+     */
     @Test(expected = TransacaoException.class)
     public void testBadWayTransacaoWithPlusOneMinute(){
         //Etapa de Mockagem
@@ -64,6 +104,12 @@ public class TransacaoServiceTest {
         transacaoService.saveTransacao(transacaoMock);
     }
 
+    /**
+     * Objetivo do teste: simular a tratativa quando receber uma transação com o atributo dataHora com uma hora futura,
+     * validando que o método acione uma exceção.
+     *
+     * Resultado esperado: que o método saveTransacao da classe TransacaoService invoque a exception do tipo TransacaoException.
+     */
     @Test(expected = TransacaoException.class)
     public void testBadWayTransacaoWithPlusOneHour(){
         //Etapa de Mockagem
@@ -71,16 +117,6 @@ public class TransacaoServiceTest {
         Transacao transacaoMock = new Transacao(25.0, dateFuture);
         //Etapa de Ação
         transacaoService.saveTransacao(transacaoMock);
-    }
-
-    @Test
-    public void testBadWayTransacaoWithValorNegativo(){
-        //Etapa de Mockagem
-        Transacao transacaoMock = new Transacao(-1.0, OffsetDateTime.now(ZoneOffset.of("-03:00")));
-        //Etapa de Ação e assertividade
-        Exception exception = assertThrows(TransacaoException.class, () -> transacaoService.saveTransacao(transacaoMock));
-        assertEquals("A transação DEVE ter valor igual ou maior que 0 (zero)", exception.getMessage());
-        verify(transacaoRepository, never()).save(transacaoMock);
     }
 
 }

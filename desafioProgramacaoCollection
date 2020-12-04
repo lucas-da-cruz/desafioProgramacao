@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "14a8ac99-5953-4765-84b1-ff26f884fa94",
+		"name": "desafioProgramacao",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "transação",
+			"item": [
+				{
+					"name": "Post /transacao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"valor\":  15,\r\n \"dataHora\": \"2020-12-04T12:15:01.789-03:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://desafioprog.herokuapp.com/transacao",
+							"protocol": "http",
+							"host": [
+								"desafioprog",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"transacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All /transacao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://desafioprog.herokuapp.com/transacao",
+							"protocol": "http",
+							"host": [
+								"desafioprog",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"transacao"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "estatistica",
+			"item": [
+				{
+					"name": "Get /estatistica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://desafioprog.herokuapp.com/estatistica",
+							"protocol": "http",
+							"host": [
+								"desafioprog",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"estatistica"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "health",
+			"item": [
+				{
+					"name": "Get /actuator/health",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://desafioprog.herokuapp.com/actuator/health",
+							"protocol": "http",
+							"host": [
+								"desafioprog",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"actuator",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

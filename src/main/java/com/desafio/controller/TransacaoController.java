@@ -1,7 +1,6 @@
 package com.desafio.controller;
 
 import com.desafio.model.entity.Transacao;
-import com.desafio.model.exception.TransacaoException;
 import com.desafio.service.TransacaoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -23,15 +22,9 @@ public class TransacaoController {
     @PostMapping
     public ResponseEntity save(@RequestBody @Valid Transacao transacao){
         Logger.info("Transação recebida");
-        try{
-            transacaoService.saveTransacao(transacao);
-            Logger.info("Nova transação gravada");
-            return ResponseEntity.status(201).build();
-        }
-        catch(TransacaoException e){
-            Logger.error("Erro gerado: " + e.getMessage());
-            return ResponseEntity.status(422).build();
-        }
+        transacaoService.saveTransacao(transacao);
+        Logger.info("Nova transação gravada");
+        return ResponseEntity.status(201).build();
     }
 
     @DeleteMapping

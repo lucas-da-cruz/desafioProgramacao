@@ -1,7 +1,8 @@
 package com.desafio.service;
 
 import com.desafio.model.entity.Transacao;
-import com.desafio.model.exception.TransacaoException;
+import com.desafio.model.exception.TransacaoComDataFuturaException;
+import com.desafio.model.exception.TransacaoComValorNegativoException;
 import com.desafio.repository.TransacaoRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,12 +39,12 @@ public class TransacaoService {
 
     public void saveTransacao(Transacao transacao){
         if(isFutureDate(transacao.getDataHora())){
-            Logger.error("Tentativa de inserção de transação com data futura");
-            throw new TransacaoException("A transação NÃO DEVE acontecer no futuro");
+            Logger.warn("Tentativa de inserção de transação com data futura");
+            throw new TransacaoComDataFuturaException("A transação NÃO DEVE acontecer no futuro");
         }
         if(transacao.getValor() < 0){
-            Logger.error("Tentativa de inserção de transação com valor negativo");
-            throw new TransacaoException("A transação DEVE ter valor igual ou maior que 0 (zero)");
+            Logger.warn("Tentativa de inserção de transação com data futura");
+            throw new TransacaoComValorNegativoException("A transação NÃO DEVE ter valor negativo");
         }
         repository.save(transacao);
     }

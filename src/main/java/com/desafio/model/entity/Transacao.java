@@ -1,25 +1,30 @@
 package com.desafio.model.entity;
 
+import javax.validation.constraints.DecimalMin;
+import javax.validation.constraints.NotNull;
 import java.time.OffsetDateTime;
 
 public class Transacao {
 
-    private double valor;
+    @NotNull
+    @DecimalMin(value = "0.0")
+    private Double valor;
+    @NotNull
     private OffsetDateTime dataHora;
 
     public Transacao() {
     }
 
-    public Transacao(double valor, OffsetDateTime dataHora) {
+    public Transacao(Double valor, OffsetDateTime dataHora) {
         this.valor = valor;
         this.dataHora = dataHora;
     }
 
-    public double getValor() {
+    public Double getValor() {
         return valor;
     }
 
-    public void setValor(double valor) {
+    public void setValor(Double valor) {
         this.valor = valor;
     }
 
